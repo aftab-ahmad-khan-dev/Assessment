@@ -1,0 +1,24 @@
+[
+  {
+      "name": "User 1",
+      "username": "user123456",
+      "gender": "male",
+      "email": "user1@gmail.com",
+      "phone": "123456789",
+      "password": "$2a$12$vZwOE2IpbYD9IkJSV55JeewWYOtQrbDByrpg5TyvEiaczY4eNuGx2",
+      "dateOfBirth": "2000-12-28",
+      "enablePushNotification": false,
+      "type": "user"
+  },
+  {
+      "name": "User 2",
+      "username": "User123456",
+      "gender": "male",
+      "email": "User1@gmail.com",
+      "phone": "987654321",
+      "password": "$2a$12$vZwOE2IpbYD9IkJSV55JeewWYOtQrbDByrpg5TyvEiaczY4eNuGx2",
+      "dateOfBirth": "2000-01-01",
+      "enablePushNotification": false,
+      "type": "User"
+  }
+]

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Email</title>
+    <style>
+        :root {
+            --primary-color: #4caf50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4caf50;
+            /* Use primary color variable */
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .content p {
+            color: #555555;
+            font-size: 16px;
+        }
+
+        .details {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #4caf50;
+            /* Use primary color variable */
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            color: #333333;
+        }
+
+        .code {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f1f8e9;
+            border-left: 5px solid #4caf50;
+            /* Reset code color */
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .code p {
+            margin: 10px 0;
+            color: #333333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Welcome to ||COMPANYNAME||</h1>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <p>Hello ||USERNAME||,</p>
+            <p>Thank you for registering with ||COMPANYNAME||. We're thrilled to have you on board!</p>
+            <div class="code">
+                <p><strong>You verification Code:</strong></p>
+                <p style="font-size: 24px; color: var(--primary-color);">||CODE||</p>
+            </div>
+
+            <p>If you have any questions or need assistance, don't hesitate to contact our support team.</p>
+            <p>Best Regards,<br>||COMPANYNAME|| Team</p>
+
+            <!-- Footer Section -->
+            <div class="footer">
+                <p>&copy; ||YEAR|| ||COMPANYNAME||. All rights reserved.</p>
+                <p><a href="||COMPANYWEB||">Visit our website</a> | <a href="||COMPANYWEB||/contact">Contact Support</a>
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>

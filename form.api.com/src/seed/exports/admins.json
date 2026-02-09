@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Super Admin",
+    "email": "superadmin@connect.com",
+    "isSuperAdmin": true,
+    "password": "$2a$12$7mmw2Ft3SIZXAq.BmpOb9eSB2aIudN6QfiMjX2B2FlpAIKXuvgUU.",
+    "accessTabs": []
+  },
+  {
+    "name": "Admin One",
+    "email": "admin.one@example.com",
+    "password": "$2a$12$7mmw2Ft3SIZXAq.BmpOb9eSB2aIudN6QfiMjX2B2FlpAIKXuvgUU.",
+    "profilePhoto": null, 
+    "isSuperAdmin": true,
+    "accessTabs": ["dashboard", "users", "settings"]
+  }
+ 
+]
+
+
+

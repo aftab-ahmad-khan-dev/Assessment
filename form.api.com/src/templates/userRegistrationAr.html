@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة الترحيب</title>
+    <style>
+        :root {
+            --primary-color: #4caf50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .content p {
+            color: #555555;
+            font-size: 16px;
+        }
+
+        .code {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f1f8e9;
+            border-right: 5px solid #4caf50;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .code p {
+            margin: 10px 0;
+            color: #333333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- قسم العنوان -->
+        <div class="header">
+            <h1>مرحباً بك في ||COMPANYNAME||</h1>
+        </div>
+
+        <!-- قسم المحتوى -->
+        <div class="content">
+            <p>مرحباً ||USERNAME||،</p>
+            <p>شكراً لتسجيلك في ||COMPANYNAME||. يسعدنا انضمامك إلى عائلتنا!</p>
+
+            <!-- قسم كود التحقق -->
+            <div class="code">
+                <p><strong>كود التحقق الخاص بك:</strong></p>
+                <p style="font-size: 24px; color: var(--primary-color);">||CODE||</p>
+            </div>
+
+            <p>إذا كان لديك أي أسئلة أو تحتاج إلى مساعدة، لا تتردد في التواصل مع فريق الدعم لدينا.</p>
+            <p>أطيب التحيات،<br>فريق ||COMPANYNAME||</p>
+
+            <!-- قسم التذييل -->
+            <div class="footer">
+                <p>&copy; ||YEAR|| ||COMPANYNAME||. جميع الحقوق محفوظة.</p>
+                <p><a href="||COMPANYWEB||">قم بزيارة موقعنا</a> | <a href="||COMPANYWEB||/contact">تواصل مع الدعم</a>
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>
