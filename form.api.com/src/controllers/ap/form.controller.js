@@ -16,7 +16,6 @@ export const FormController = {
       estimatedMonthlyShipments,
       interestedFeatures,
       comments,
-      isSubmitted,
     } = req.body;
 
     if (!email || typeof email !== "string" || !email.trim()) {
@@ -30,9 +29,9 @@ export const FormController = {
 
     const normalizedEmail = email.trim().toLowerCase();
 
-    // ───────────────────────────────────────────────
-    // 1. Prevent duplicate final submissions
-    // ───────────────────────────────────────────────
+    /* ───────────────────────────────────────────────
+    * 1. Prevent duplicate final submissions
+     ───────────────────────────────────────────────*/
     const alreadySubmitted = await Record.findOne({
       email: normalizedEmail,
       status: "submitted",
@@ -51,9 +50,9 @@ export const FormController = {
       );
     }
 
-    // ───────────────────────────────────────────────
-    // 2. Prepare sanitized data
-    // ───────────────────────────────────────────────
+    /* ───────────────────────────────────────────────
+    * 2. Prepare sanitized data
+     ───────────────────────────────────────────────*/
     const data = {
       companyName: companyName?.trim() || undefined,
       contactPerson: contactPerson?.trim() || undefined,
@@ -78,9 +77,9 @@ export const FormController = {
       }
     });
 
-    // ───────────────────────────────────────────────
-    // 3. Required field validation
-    // ───────────────────────────────────────────────
+    /* ───────────────────────────────────────────────
+    * 3. Required field validation
+     ───────────────────────────────────────────────*/
     const missing = [];
     if (!data.companyName) missing.push("companyName");
     if (!data.contactPerson) missing.push("contactPerson");
@@ -101,15 +100,15 @@ export const FormController = {
       );
     }
 
-    // ───────────────────────────────────────────────
-    // 4. Save final record
-    // ───────────────────────────────────────────────
+    /* ───────────────────────────────────────────────
+    * 4. Save final record
+     ───────────────────────────────────────────────*/
     const record = new Record(data);
     await record.save();
 
-    // ───────────────────────────────────────────────
-    // 5. Success response
-    // ───────────────────────────────────────────────
+    /* ───────────────────────────────────────────────
+    * 5. Success response
+     ───────────────────────────────────────────────*/
     return generateApiResponse(
       res,
       StatusCodes.CREATED,
