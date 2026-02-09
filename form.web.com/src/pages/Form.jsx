@@ -243,7 +243,7 @@ const Form = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false); // NEW: for thank you card
+  const [showSuccess, setShowSuccess] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -323,7 +323,7 @@ const Form = () => {
             comments: "",
           });
           setErrors({});
-        }, 2200); // 2.2 seconds — enough for full spin + a moment to read
+        }, 2200); 
       } else {
         const errorMsg =
           result?.message ||
@@ -368,7 +368,7 @@ const Form = () => {
             animate={{
               scale: 1,
               opacity: 1,
-              rotate: 360, // full 360° rotation
+              rotate: 360, 
             }}
             transition={{
               duration: 1.4,
@@ -400,7 +400,7 @@ const Form = () => {
               We'll reach out within 24 hours.
             </p>
 
-            {/* Optional manual close if you prefer */}
+            
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
