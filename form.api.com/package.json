@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "start": "node api.js && nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "seed": "node src/seed/seed.js"
   },
   "license": "MIT",
