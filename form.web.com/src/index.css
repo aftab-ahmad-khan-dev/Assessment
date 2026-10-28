@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hide vertical scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  overflow-x: hidden !important;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* hide scroll thumb */
+body::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+body {
+  scrollbar-color: transparent transparent !important;
+}

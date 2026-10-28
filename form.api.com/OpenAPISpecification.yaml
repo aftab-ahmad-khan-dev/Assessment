@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: OCR Sticker Intake API
+  description: "Postman collection for testing OCR Sticker Intake Web Application API endpoints, aligned with SRS v1.0."
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: "https://postman-echo.com"
+paths:
+  /:
+    post:
+      summary: Create Client
+      description: Creates a new client (§13 POST /api/clients). Save the clientId from the response for later use.
+      operationId: post
+      parameters: []
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: New Client
+    put:
+      summary: Get File
+      description:
+      operationId: put
+      parameters: []
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+    delete:
+      summary: Delete Client
+      description: "Deletes a client if no records are associated (§13 DELETE /api/clients/:id). Ensure clientId is set and no records exist."
+      operationId: delete
+      parameters: []
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+    get:
+      summary: Get Clients
+      description: Retrieves paginated clients with recordsCount (§13 GET /api/clients).
+      operationId: get
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: string
+          example: 10
+        - name: page
+          in: query
+          schema:
+            type: string
+          example: 1
+        - name: search
+          in: query
+          schema:
+            type: string
+          example: Client
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+components:
+  schemas: {}
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    digestAuth:
+      type: http
+      scheme: digest
+tags: []
