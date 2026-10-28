@@ -1,0 +1,45 @@
+[
+    {
+        "keyName": "Phone",
+        "keyValue": "+965 9759 987",
+        "keyText": "Phone number for company",
+        "keyType": "all"
+    },
+    {
+        "keyName": "email",
+        "keyValue": "info@connect.com",
+        "keyText": null,
+        "keyType": "all"
+    },
+    {
+        "keyName": "companyName",
+        "keyValue": "CONNECT",
+        "keyText": null,
+        "keyType": "all"
+    },
+    {
+        "keyName": "companyWeb",
+        "keyValue": "https://www.myconnect.com",
+        "keyText": null,
+        "keyType": "all"
+    },
+    {
+        "keyName": "companyAPI",
+        "keyValue": "https://api.connect.com",
+        "keyText": null,
+        "keyType": "all"
+    },
+    {
+        "keyName": "notificationEmail",
+        "keyValue": "info@connect.com",
+        "keyText": null,
+        "keyType": "all"
+    },
+    {
+        "keyName": "notificationsStatus",
+        "keyValue": "1",
+        "keyText": null,
+        "keyType": "all"
+    }
+
+]
